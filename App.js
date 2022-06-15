@@ -1,13 +1,11 @@
-import { StyleSheet, Text, View } from 'react-native';
-import { ScrollView } from 'react-native';
-import { Image } from 'react-native';
+import { StyleSheet, Text, View,Image,ScrollView } from 'react-native';
 import { nft01, nft02, nft03, nft04, nft05, nft07 } from './components/assets';
 
 export default function App() {
   return (
     <ScrollView showsVerticalScrollIndicator={false} >
       <View style={styles.container}>
-        <View style={{ flex: 1, margin: 20, borderRadius: 20, backgroundColor: 'white', justifyContent: 'center', alignItems: 'center', height: 300, width: 300, shadowColor: 'gray', shadowOpacity: 1 }}>
+        <View style={{ flex: 1, margin: 20, borderRadius: 20, backgroundColor: 'white', justifyContent: 'center', alignItems: 'center', height: 360, width: 360, shadowColor: 'gray', shadowOpacity: 1 }}>
           <Image
             source={nft01}
             resizeMode='cover'
@@ -60,7 +58,7 @@ export default function App() {
             </View>
           </View>
         </ScrollView>
-        <View style={{ flex: 1, margin: 20, borderRadius: 20, backgroundColor: 'white', justifyContent: 'center', alignItems: 'center', height: 300, shadowColor: 'gray', shadowOpacity: 1 }}>
+        <View style={{ flex: 1, margin: 20, borderRadius: 20, backgroundColor: 'white', justifyContent: 'center', alignItems: 'center', height: 360, width: 360, shadowColor: 'gray', shadowOpacity: 1 }}>
           <Image
             source={nft07}
             resizeMode='cover'
@@ -80,7 +78,9 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    paddingTop: 20
+    paddingTop: 20,
+    justifyContent:'center',
+    alignItems:'center'
   },
   darkgreyText:{
     padding: 10, 
@@ -141,7 +141,5 @@ const styles = StyleSheet.create({
     height: "100%",
     borderRadius: 20,
   },
-  card:{
-    
-  },
+  card:{},
 });
